@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "NODE_ENV=prod ENVIRONMENT=prod pm2 start --node-args=\"--max-old-space-size=2400\" --name preprint-proxy --log production.log index.js"
   },
   "keywords": [],
   "author": "",
